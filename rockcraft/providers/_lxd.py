@@ -30,9 +30,6 @@ from ._provider import Provider, ProviderError
 
 logger = logging.getLogger(__name__)
 
-_BASE_IMAGE = {"ubuntu:18.04": "18.04", "ubuntu:20.04": "20.04"}
-
-
 class LXDProvider(Provider):
     """LXD build environment provider.
 
@@ -167,7 +164,7 @@ class LXDProvider(Provider):
             instance = lxd.launch(
                 name=instance_name,
                 base_configuration=base_configuration,
-                image_name=_BASE_IMAGE[base],
+                image_name=base,
                 image_remote=image_remote,
                 auto_clean=True,
                 auto_create_project=True,

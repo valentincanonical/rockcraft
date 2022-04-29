@@ -97,10 +97,11 @@ class Provider(ABC):
         :returns: Tuple of bool indicating whether it is a match, with optional
                 reason if not a match.
         """
-        if base not in ["ubuntu:18.04", "ubuntu:20.04"]:
+        BASES = ["18.04", "20.04"]
+        if base not in BASES:
             return (
                 False,
-                f"Base {base!r} is not supported (must be 'ubuntu:18.04' or 'ubuntu:20.04')",
+                f"Base {base!r} is not supported (must be {' or '.join(BASES)})",
             )
 
         return True, None
