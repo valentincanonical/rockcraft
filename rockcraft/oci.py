@@ -52,7 +52,11 @@ class Image:
         """
         image_dir.mkdir(parents=True, exist_ok=True)
         image_target = image_dir / image_name
-        _copy_image(f"docker://{image_name}", f"oci:{image_target}")
+        # image_target.mkdir(parents=True, exist_ok=True)
+
+        # _copy_image(f"docker://{image_name}", f"oci:{image_target}")
+        _process_run(["umoci", "init", "--layout", str(image_target).split(':')[0]])
+        _process_run(["umoci", "new", "--image", str(image_target)])
 
         return cls(image_name=image_name, path=image_dir)
 
