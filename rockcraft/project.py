@@ -38,7 +38,7 @@ class Project(pydantic.BaseModel):
 
     name: str
     version: str
-    base: Literal["18.04", "20.04"]
+    base: Literal["18.04", "20.04", "22.04"]
     build_base: Optional[str]
     entrypoint: Optional[List[str]]
     cmd: Optional[List[str]]

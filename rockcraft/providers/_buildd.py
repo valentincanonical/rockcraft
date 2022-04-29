@@ -26,8 +26,9 @@ from overrides import overrides
 from rockcraft import utils
 
 BASE_TO_BUILDD_IMAGE_ALIAS = {
-    "ubuntu:18.04": bases.BuilddBaseAlias.BIONIC,
-    "ubuntu:20.04": bases.BuilddBaseAlias.FOCAL,
+    "18.04": bases.BuilddBaseAlias.BIONIC,
+    "20.04": bases.BuilddBaseAlias.FOCAL,
+    "22.04": bases.BuilddBaseAlias.JAMMY,
 }
 
 

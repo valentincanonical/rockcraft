@@ -97,7 +97,7 @@ class Provider(ABC):
         :returns: Tuple of bool indicating whether it is a match, with optional
                 reason if not a match.
         """
-        BASES = ["18.04", "20.04"]
+        BASES = ["18.04", "20.04", "22.04"]
         if base not in BASES:
             return (
                 False,
