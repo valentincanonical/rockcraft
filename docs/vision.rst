@@ -1,5 +1,5 @@
 ***********
-Explanation
+Our vision
 ***********
 
 Getting past the technical matters surrounding Rockcraft, from a higher perspective,

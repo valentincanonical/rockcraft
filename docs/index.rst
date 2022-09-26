@@ -37,7 +37,7 @@ matters - the image's content.
 
    reference
 
-   explanation
+   vision
 
 
 .. list-table::
@@ -58,9 +58,9 @@ matters - the image's content.
        **Step-by-step guides** covering key operations and common tasks
        |br| |br| |br| |br|
 
-       |h4| :doc:`Explanation <explanation>` |h4end|
+       |h4| :doc:`Vision <vision>` |h4end|
 
-       **Discussion and clarifications** of key topics
+       **Discussion** on why we need ROCKs, and **key definitions**
 
 
 
